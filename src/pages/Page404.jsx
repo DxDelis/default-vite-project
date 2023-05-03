@@ -7,7 +7,7 @@ export const Page404 = () => {
             <Stack textAlign="center">
                 <Heading>404</Heading>
                 <Text>Страница не найдена</Text>
-                <Button as={Link} to="/" colorScheme="gray">
+                <Button as={Link} to="/home" colorScheme="gray">
                     Перейти на страницу Home
                 </Button>
             </Stack>

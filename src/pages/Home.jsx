@@ -1,35 +1,26 @@
-import { Button, Center,Tabs, TabList, TabPanels, Tab, TabPanel  } from '@chakra-ui/react'
-import { Link } from 'react-router-dom'
+import { Flex, Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
+import { Avatars } from './tabsHome/Avatars'
+import { Cross } from './tabsHome/Cross'
 
 export const Home = () => (
-    <><Center h="100vh">
-      <header>
-        <div>
-            <span className='logo'> Vise shipping</span>
-        </div>
-        <div className='presentation'></div>
-    </header>
-    
-    <footer>
-        Все права защищены &copy;
-      </footer>     
-    </Center>
-    <Tabs variant='soft-rounded' colorScheme='green'>
-    <TabList>
-      <Tab>Tab 1</Tab>
-      <Tab>Tab 2</Tab>
-    </TabList>
-    <TabPanels>
-      <TabPanel>
-        <p>one!</p>
-      </TabPanel>
-      <TabPanel>
-        <p>two!</p>
-      </TabPanel>
-    </TabPanels>
-  </Tabs></>
-
-  
-      
-    
+    <Flex h="100vh" flexDirection="column">
+        <Tabs w="100%">
+            <TabList>
+                <Tab>One</Tab>
+                <Tab>Two</Tab>
+                <Tab>Three</Tab>
+            </TabList>
+            <TabPanels>
+                <TabPanel>
+                    <Avatars />
+                </TabPanel>
+                <TabPanel>
+                    <Cross />
+                </TabPanel>
+                <TabPanel>
+                    <p>three!</p>
+                </TabPanel>
+            </TabPanels>
+        </Tabs>
+    </Flex>
 )
