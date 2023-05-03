@@ -1,13 +1,35 @@
-import { Button, Center, Text, Stack } from '@chakra-ui/react'
+import { Button, Center,Tabs, TabList, TabPanels, Tab, TabPanel  } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 
 export const Home = () => (
-    <Center h="100vh">
-        <Stack>
-            <Text textAlign="center">Старница Home</Text>
-            <Button as={Link} to="/asdfg" colorScheme="blue">
-                Перейти на страницу 404
-            </Button>
-        </Stack>
+    <><Center h="100vh">
+      <header>
+        <div>
+            <span className='logo'> Vise shipping</span>
+        </div>
+        <div className='presentation'></div>
+    </header>
+    
+    <footer>
+        Все права защищены &copy;
+      </footer>     
     </Center>
+    <Tabs variant='soft-rounded' colorScheme='green'>
+    <TabList>
+      <Tab>Tab 1</Tab>
+      <Tab>Tab 2</Tab>
+    </TabList>
+    <TabPanels>
+      <TabPanel>
+        <p>one!</p>
+      </TabPanel>
+      <TabPanel>
+        <p>two!</p>
+      </TabPanel>
+    </TabPanels>
+  </Tabs></>
+
+  
+      
+    
 )

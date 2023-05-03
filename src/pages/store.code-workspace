@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../store"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../public"
+		}
+	],
+	"settings": {}
+}
